@@ -47,11 +47,7 @@ You can "compile" a light-weighted version of Turf using [browserify](http://bro
   ...
   ```
 
-  References:
+## References:
   
- Underscore:
- http://underscorejs.org/
- Stackoverflow:
- http://stackoverflow.com/questions/14968297/use-underscore-inside-controllers
- Github:
- https://github.com/andresesfm/angular-underscore-module
+- Turf: http://turfjs.org/
+- Github: https://github.com/tazaf/angular-turf-module
