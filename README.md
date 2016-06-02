@@ -26,7 +26,7 @@ You can "compile" a light-weighted version of Turf using [browserify](http://bro
 2. Add angular-turf-module.js to your main file (index.html)
 
     ```html
-    <script src="bower_components/angular-turf-module/angular-turf-module.js"></script>
+    <script src="path/to/angular-turf-module/angular-turf-module.js"></script>
     ```
 
 3. Add the module as a dependency in your App definition
