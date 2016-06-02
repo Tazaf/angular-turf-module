@@ -13,15 +13,21 @@ You can "compile" a light-weighted version of Turf using [browserify](http://bro
 
 0. Make sure you have included [turf.min.js](https://raw.githubusercontent.com/Turfjs/turf/v2.0.2/turf.min.js) (or your compiled custom turf) in your project 
 
-    ```<script src="path/to/turf.min.js">```
+    ```html
+    <script src="path/to/turf.min.js">
+    ```
 
 1. get this module
 
-   ```bower install tazaf/angular-turf-module```
+   ```
+   bower install tazaf/angular-turf-module
+   ```
 
 2. Add angular-turf-module.js to your main file (index.html)
 
-    ```<script src="bower_components/angular-turf-module/angular-turf-module.js"></script>```
+    ```html
+    <script src="bower_components/angular-turf-module/angular-turf-module.js"></script>
+    ```
 
 3. Add the module as a dependency in your App definition
 
