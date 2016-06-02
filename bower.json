@@ -1,8 +1,5 @@
 {
   "name": "angular-turf-module",
   "version": "1.0.0",
-  "main": "./angular-turf-module.js",
-  "dependencies": {
-    "turf": "~3.0"
-  }
+  "main": "./angular-turf-module.js"
 }
