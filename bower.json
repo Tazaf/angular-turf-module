@@ -1,8 +1,8 @@
 {
-  "name": "angular-underscore-module",
-  "version": "1.0.2",
-  "main": "./angular-underscore-module.js",
+  "name": "angular-turf-module",
+  "version": "1.0.0",
+  "main": "./angular-turf-module.js",
   "dependencies": {
-    "underscore": "~1.8"
+    "turf": "~3.0"
   }
 }
