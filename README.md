@@ -1,35 +1,43 @@
-angular-underscore-module - Use Underscore from an Angular Controller or Service
+angular-turf-module - Use Turf from an Angular Controller or Service
 ======
 
+_Note : This repo and this doc are heavily adapted from the [angular-underscore-module](https://github.com/andresesfm/angular-underscore-module), developed by [andresesfm](https://github.com/andresesfm). Kudos to him._
+
+## Introduction
+
+[Turf](http://turfjs.org/) is a JavaScript library developed by people from MapBox that gives you methods to manipulate geodata with JS.
+
+You can "compile" a light-weighted version of Turf using [browserify](http://browserify.org/) (see the [turf documentation](https://github.com/turfjs/turf/#installation)).
 
 ## Usage
 
-0. Make sure you have included underscore.js in your project
+0. Make sure you have included [turf.min.js](https://raw.githubusercontent.com/Turfjs/turf/v2.0.2/turf.min.js) (or your compiled custom turf) in your project 
 
-    ```<script src="bower_components/underscore/underscore.js">```
+    ```<script src="path/to/turf.min.js">```
 
-1. get it 
+1. get this module
 
-   ```bower install angular-underscore-module```
+   ```bower install tazaf/angular-turf-module```
 
-2. Add angular-underscore-module.js to your main file (index.html)
+2. Add angular-turf-module.js to your main file (index.html)
 
-    ```<script src="bower_components/angular-underscore-module/angular-underscore-module.js"></script>```
+    ```<script src="bower_components/angular-turf-module/angular-turf-module.js"></script>```
 
 3. Add the module as a dependency in your App definition
 
    ```javascript
-  var myapp = angular.module('MyApp', ['underscore'])
+  angular.module('MyApp', ['TurfModule'])
    ```
 
 4. To use, add as an injected dependency to your Controller/Service and it is ready to use
 
     ```javascript
-  angular.module('MyApp')
-  .controller('MyCtrl', function ($scope, _) {
+  angular
+    .module('MyApp')
+    .controller('MyCtrl', function ($scope, turf) {
   ...
   //Use underscore
-   _.each(...);
+  var pt1 = turf.point([-75.343, 39.984]);
   ...
   ```
 
