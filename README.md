@@ -5,13 +5,21 @@ _Note : This repo and this doc are heavily adapted from the [angular-underscore-
 
 ## Introduction
 
-[Turf](http://turfjs.org/) is a JavaScript library developed by people from MapBox that gives you methods to manipulate geodata with JS.
+[Turf](http://turfjs.org/) is a JavaScript library developed by people from MapBox that gives you methods to manipulate geodata with JS. The library is composed of several independant module, each of which achieve a particular geotreatment.
 
-You can "compile" a light-weighted version of Turf using [browserify](http://browserify.org/) (see the [turf documentation](https://github.com/turfjs/turf/#installation)).
+## Download Turf
+
+As this module is only a wrapper to access turf in an _Angular Way_, you still need to download the actual library. You have several options to do so:
+
+- Download the complete minified version of the library [here](https://raw.githubusercontent.com/Turfjs/turf/v2.0.2/turf.min.js)
+- Use this [online turf builder](https://turfjs-builder.herokuapp.com/) to build your own version of Turf, using only the module you need for your project. **This is the recommended option**
+- Install [Browserify](http://browserify.org/) by yourself and build your own version of Turf, using only the module you need for your project (see the [turf documentation](https://github.com/turfjs/turf/#installation))
+
+Either way, you should finally have a single js file, named whatever you want, that contains all the necessary code. For the rest of this documentation, we will assume that your js file is name `turf.min.js`
 
 ## Usage
 
-0. Make sure you have included [turf.min.js](https://raw.githubusercontent.com/Turfjs/turf/v2.0.2/turf.min.js) (or your compiled custom turf) in your project 
+0. Make sure you have downloaded and included `turf.min.js` in your project:
 
     ```html
     <script src="path/to/turf.min.js">
@@ -42,7 +50,7 @@ You can "compile" a light-weighted version of Turf using [browserify](http://bro
     .module('MyApp')
     .controller('MyCtrl', function ($scope, turf) {
   ...
-  //Use underscore
+  //Use turf
   var pt1 = turf.point([-75.343, 39.984]);
   ...
   ```
@@ -50,4 +58,5 @@ You can "compile" a light-weighted version of Turf using [browserify](http://bro
 ## References:
   
 - Turf: http://turfjs.org/
+- Turf Builder Tool: https://turfjs-builder.herokuapp.com/
 - Github: https://github.com/tazaf/angular-turf-module
