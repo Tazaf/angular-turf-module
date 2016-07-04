@@ -27,9 +27,9 @@ Either way, you should finally have a single js file, named whatever you want, t
 
 1. get this module
 
-   ```
-   bower install tazaf/angular-turf-module
-   ```
+    ```
+    bower install tazaf/angular-turf-module
+    ```
 
 2. Add angular-turf-module.js to your main file (index.html)
 
@@ -39,21 +39,21 @@ Either way, you should finally have a single js file, named whatever you want, t
 
 3. Add the module as a dependency in your App definition
 
-   ```javascript
-  angular.module('MyApp', ['TurfModule'])
-   ```
+    ```javascript
+    angular.module('MyApp', ['TurfModule'])
+    ```
 
 4. To use, add as an injected dependency to your Controller/Service and it is ready to use
 
     ```javascript
-  angular
-    .module('MyApp')
-    .controller('MyCtrl', function ($scope, turf) {
-  ...
-  //Use turf
-  var pt1 = turf.point([-75.343, 39.984]);
-  ...
-  ```
+    angular
+      .module('MyApp')
+      .controller('MyCtrl', function ($scope, turf) {
+    ...
+    //Use turf
+    var pt1 = turf.point([-75.343, 39.984]);
+    ...
+    ```
 
 ## References:
   
