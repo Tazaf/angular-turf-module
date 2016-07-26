@@ -15,7 +15,7 @@ As this module is only a wrapper to access turf in an _Angular Way_, you still n
 - Use this [online turf builder](https://turfjs-builder.herokuapp.com/) to build your own version of Turf, using only the module you need for your project. **This is the recommended option**
 - Install [Browserify](http://browserify.org/) by yourself and build your own version of Turf, using only the module you need for your project (see the [turf documentation](https://github.com/turfjs/turf/#installation))
 
-Either way, you should finally have a single js file, named whatever you want, that contains all the necessary code. For the rest of this documentation, we will assume that your js file is name `turf.min.js`
+Either way, you should finally have a single js file, named whatever you want, that contains all the necessary code. For the rest of this documentation, we will assume that your js file is named `turf.min.js`
 
 ## Usage
 
